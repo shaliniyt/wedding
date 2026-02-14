@@ -1,0 +1,16 @@
+.petal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.petal {
+    position: absolute;
+    /* Shape logic handled in inline styles for randomness, but base styles here */
+    filter: blur(1px);
+}

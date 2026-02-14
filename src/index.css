@@ -1,0 +1,134 @@
+:root {
+  /* Vibrant & Rich Traditional Palette */
+  --primary-color: #d4af37;
+  /* Base Gold */
+  --primary-gradient: linear-gradient(135deg, #DFBD69 0%, #d4af37 50%, #926F34 100%);
+
+  --secondary-color: #800020;
+  /* Deep Maroon */
+  --secondary-gradient: linear-gradient(135deg, #800020 0%, #b0002b 50%, #500015 100%);
+
+  /* New Vibrant Accents */
+  --vibrant-pink: #ff4d6d;
+  --vibrant-gold: #ffbe0b;
+  --vibrant-gradient: linear-gradient(45deg, #800020, #ff4d6d, #ffbe0b, #800020);
+
+  --text-color: #2c1a1a;
+  --bg-color: #fdfbf7;
+
+  /* Enhanced Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(212, 175, 55, 0.4);
+  --glass-shadow: 0 12px 40px 0 rgba(128, 0, 32, 0.15);
+
+  --fancy-font: 'Great Vibes', cursive;
+  --heading-font: 'Playfair Display', serif;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-color);
+  background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  /* Subtle texture */
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+  background: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-title::after {
+  content: '❦';
+  /* Floral ornament */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: none;
+  -webkit-text-fill-color: var(--primary-color);
+}
+
+/* Fancy Buttons */
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 3.5rem;
+  background: var(--primary-gradient);
+  color: white;
+  border: 1px solid #DFBD69;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  background: linear-gradient(135deg, #d4af37 0%, #DFBD69 100%);
+}
+
+/* Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 6rem 0;
+  min-height: 80vh;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}

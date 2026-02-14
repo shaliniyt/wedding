@@ -1,0 +1,115 @@
+.couple-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.couple-card {
+    text-align: center;
+    background: var(--glass-bg);
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    border: 2px solid #DFBD69;
+    /* Gold Border */
+    box-shadow: 0 10px 30px rgba(128, 0, 32, 0.15);
+    /* Maroon Shadow */
+    backdrop-filter: blur(10px);
+    flex: 1;
+    min-width: 320px;
+    max-width: 400px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ornamental Corners */
+.couple-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid var(--primary-color);
+    border-left: 2px solid var(--primary-color);
+}
+
+.couple-card::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-bottom: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+}
+
+.couple-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(128, 0, 32, 0.25);
+    border-color: #d4af37;
+}
+
+.img-wrapper {
+    width: 260px;
+    height: 320px;
+    /* Portrait for grandeur */
+    border-radius: 4px;
+    /* Slight round, mostly frame */
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    border: 8px double var(--primary-color);
+    /* Double gold frame */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Circle override for parents if needed, but portrait looks more royal */
+.couple-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.couple-card:hover .couple-img {
+    transform: scale(1.1);
+}
+
+.couple-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-family: var(--fancy-font);
+}
+
+.parents {
+    font-size: 1.1rem;
+    color: #444;
+    margin-top: 1rem;
+    font-style: italic;
+    font-family: var(--heading-font);
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    padding-top: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-heart {
+    font-size: 4rem;
+    color: #ff0000;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.6));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .couple-grid {
+        gap: 2rem;
+    }
+}
