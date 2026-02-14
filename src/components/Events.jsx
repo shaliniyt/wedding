@@ -8,7 +8,7 @@ const eventsData = [
         title: "Tilak Ceremony",
         date: "19 Nov",
         time: "6:00 PM Onwards",
-        venue: "Royal Pepper Banquet, Prayagraj",
+        venue: "Mandawa, Mandawa Bazara, Handia, Prayagraj",
         desc: "Please join us for the Tilak ceremony to bless the groom.",
         highlight: false
     },
@@ -16,7 +16,7 @@ const eventsData = [
         title: "Haldi & Mehendi",
         date: "19 Nov",
         time: "10:00 AM Onwards",
-        venue: "Royal Pepper Banquet, Prayagraj",
+        venue: "Downtown Banquet, Prayagraj",
         desc: "A colorful morning filled with love, laughter, and turmeric.",
         highlight: false
     },
@@ -24,7 +24,7 @@ const eventsData = [
         title: "The Wedding",
         date: "20 Nov",
         time: "Evening",
-        venue: "Royal Pepper Banquet, Prayagraj",
+        venue: "Downtown Banquet, Prayagraj",
         desc: "Witness the union of our souls as we tie the knot.",
         highlight: true
     }

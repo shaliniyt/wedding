@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHeart } from 'react-icons/fa';
 import './Couple.css';
+import shaliniImg from '../assets/shalini.jpeg';
+import vishalImg from '../assets/vishal.jpeg';
 
 const Couple = () => {
     return (
@@ -28,7 +30,7 @@ const Couple = () => {
                     >
                         <div className="img-wrapper">
                             <img
-                                src="/assets/bride_placeholder.jpg"
+                                src={shaliniImg}
                                 alt="Shalini Singh"
                                 className="couple-img"
                                 onError={(e) => e.target.src = 'https://placehold.co/400x500?text=Shalini'}
@@ -62,7 +64,7 @@ const Couple = () => {
                     >
                         <div className="img-wrapper">
                             <img
-                                src="/assets/groom_placeholder.jpg"
+                                src={vishalImg}
                                 alt="Vishal Singh"
                                 className="couple-img"
                                 onError={(e) => e.target.src = 'https://placehold.co/400x500?text=Vishal'}
@@ -76,5 +78,6 @@ const Couple = () => {
         </section>
     );
 };
+
 
 export default Couple;
