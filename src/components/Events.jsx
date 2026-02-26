@@ -16,7 +16,7 @@ const eventsData = [
         title: "Haldi & Mehendi",
         date: "19 Nov",
         time: "10:00 AM Onwards",
-        venue: "Downtown Banquet, Prayagraj",
+        venue: "Downtown Banquet, Jhalwa, Prayagraj",
         desc: "A colorful morning filled with love, laughter, and turmeric.",
         highlight: false
     },
@@ -24,7 +24,7 @@ const eventsData = [
         title: "The Wedding",
         date: "20 Nov",
         time: "Evening",
-        venue: "Downtown Banquet, Prayagraj",
+        venue: "Downtown Banquet, Jhalwa, Prayagraj",
         desc: "Witness the union of our souls as we tie the knot.",
         highlight: true
     }
